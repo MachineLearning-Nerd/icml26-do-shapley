@@ -1,0 +1,29 @@
+{
+  "paper": "Exactly Computing do-Shapley Values (arXiv 2602.07203)",
+  "openreview_id": "Peim0KY6ty",
+  "claims": {
+    "C1_exact_computation_linear_in_r": {
+      "claim": "C1 r-range",
+      "cases": 60,
+      "verified": 60,
+      "worst_abs_err": 1.5987211554602254e-14,
+      "all_machine_precision": true,
+      "corr_exact_time_vs_r": 0.9991816646097756,
+      "max_speedup_vs_brute": 72.85789081528391,
+      "exact_handles_d_up_to": 25,
+      "exact_at_d25_time_s": 18.84740965696983,
+      "all_in_range": true
+    },
+    "C2_estimator_convergence": {
+      "claim": "C2 estimator",
+      "cases": 4,
+      "all_exact_at_r": true,
+      "max_gap_orders_of_magnitude": 15.530870010069162,
+      "max_gap_at": "d=11, m=81, r=81"
+    }
+  },
+  "verdict": {
+    "C1_verified": true,
+    "C2_verified": true
+  }
+}

@@ -1,0 +1,54 @@
+{
+  "schema_version": 1,
+  "title": "Repro - Exactly Computing do-Shapley Values",
+  "emoji": "🎲",
+  "space_id": "DineshAI/Peim0KY6ty",
+  "paper": {
+    "arxiv_id": "2602.07203",
+    "openreview_id": "Peim0KY6ty"
+  },
+  "tags": [
+    "icml2026-repro",
+    "paper-Peim0KY6ty"
+  ],
+  "updated_at": "2026-07-17T04:33:26+00:00",
+  "root": {
+    "slug": "index",
+    "title": "Repro - Exactly Computing do-Shapley Values",
+    "file": "pages/index.md",
+    "children": [
+      {
+        "slug": "claim-1-exact-computation",
+        "title": "Claim 1 — Exact computation",
+        "file": "pages/claim-1-exact-computation/page.md",
+        "children": []
+      },
+      {
+        "slug": "claim-2-estimator",
+        "title": "Claim 2 — Estimator",
+        "file": "pages/claim-2-estimator/page.md",
+        "children": []
+      },
+      {
+        "slug": "methods-environment",
+        "title": "Methods & environment",
+        "file": "pages/methods-environment/page.md",
+        "children": []
+      },
+      {
+        "slug": "negative-controls",
+        "title": "Negative controls",
+        "file": "pages/negative-controls/page.md",
+        "children": []
+      },
+      {
+        "slug": "conclusion",
+        "title": "Conclusion",
+        "file": "pages/conclusion/page.md",
+        "children": []
+      }
+    ]
+  },
+  "agent_view_tokens": 2648,
+  "revision": "1784262806049651557"
+}

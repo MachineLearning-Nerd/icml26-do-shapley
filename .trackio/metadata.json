@@ -1,0 +1,51 @@
+{
+  "space_id": "DineshAI/Peim0KY6ty",
+  "emoji": "🎲",
+  "created_at": "2026-07-17T04:28:25+00:00",
+  "paper": {
+    "arxiv_id": "2602.07203",
+    "openreview_id": "Peim0KY6ty"
+  },
+  "tags": [
+    "icml2026-repro",
+    "paper-Peim0KY6ty"
+  ],
+  "autosync": true,
+  "private": false,
+  "title": "Repro - Exactly Computing do-Shapley Values",
+  "last_page": "conclusion",
+  "local_dashboards": {},
+  "artifacts_bucket": "DineshAI/Peim0KY6ty-artifacts",
+  "local_path_artifacts": [
+    {
+      "path": "outputs/c1_exact_vs_brute.csv",
+      "abs_path": "/home/dineshai/Drives/Code/AllCode/ReproduceICML/papers/icml26-repro-Peim0KY6ty-do-shapley/outputs/c1_exact_vs_brute.csv",
+      "size": 3710,
+      "artifact_type": "dataset"
+    },
+    {
+      "path": "outputs/c2_convergence.csv",
+      "abs_path": "/home/dineshai/Drives/Code/AllCode/ReproduceICML/papers/icml26-repro-Peim0KY6ty-do-shapley/outputs/c2_convergence.csv",
+      "size": 1908,
+      "artifact_type": "dataset"
+    },
+    {
+      "path": "outputs/c1_linearity.csv",
+      "abs_path": "/home/dineshai/Drives/Code/AllCode/ReproduceICML/papers/icml26-repro-Peim0KY6ty-do-shapley/outputs/c1_linearity.csv",
+      "size": 903,
+      "artifact_type": "dataset"
+    },
+    {
+      "path": "outputs/c1_exact_large.csv",
+      "abs_path": "/home/dineshai/Drives/Code/AllCode/ReproduceICML/papers/icml26-repro-Peim0KY6ty-do-shapley/outputs/c1_exact_large.csv",
+      "size": 245,
+      "artifact_type": "dataset"
+    },
+    {
+      "path": "outputs/c1_r_range.csv",
+      "abs_path": "/home/dineshai/Drives/Code/AllCode/ReproduceICML/papers/icml26-repro-Peim0KY6ty-do-shapley/outputs/c1_r_range.csv",
+      "size": 127,
+      "artifact_type": "dataset"
+    }
+  ]
+}
