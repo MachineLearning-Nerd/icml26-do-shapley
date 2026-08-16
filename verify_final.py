@@ -131,6 +131,9 @@ def check_git_state() -> None:
             CANONICAL_EMAIL,
         ):
             fail(f"non-canonical commit identity: {record}")
+    messages = run("git", "log", "--all", "--format=%B")
+    if any(line.lower().startswith("co-authored-by:") for line in messages.splitlines()):
+        fail("a reachable commit contains a co-author trailer")
 
 
 def read_rows(name: str) -> list[dict[str, str]]:
