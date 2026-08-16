@@ -1,0 +1,39 @@
+cff-version: 1.2.0
+message: "If this reproduction or its evidence audit is useful, please cite the software and the original paper."
+type: software
+title: "icml26-do-shapley: Independent reproduction of Exactly Computing do-Shapley Values"
+version: "1.0.0"
+authors:
+  - family-names: "MachineLearning-Nerd"
+    given-names: ""
+    email: "MachineLearning-Nerd@users.noreply.github.com"
+repository-code: "https://github.com/MachineLearning-Nerd/icml26-do-shapley"
+url: "https://github.com/MachineLearning-Nerd/icml26-do-shapley"
+date-released: 2026-08-16
+license: MIT
+keywords:
+  - do-Shapley values
+  - causal inference
+  - structural causal models
+  - reproducibility
+preferred-citation:
+  type: article
+  title: "Exactly Computing do-Shapley Values"
+  authors:
+    - family-names: "Witter"
+      given-names: "R. Teal"
+    - family-names: "Parafita"
+      given-names: "Álvaro"
+    - family-names: "Garriga"
+      given-names: "Tomas"
+    - family-names: "Muschalik"
+      given-names: "Maximilian"
+    - family-names: "Fumagalli"
+      given-names: "Fabian"
+    - family-names: "Brando"
+      given-names: "Axel"
+    - family-names: "Rosenblatt"
+      given-names: "Lucas"
+  year: 2026
+  doi: "10.48550/arXiv.2602.07203"
+  url: "https://arxiv.org/abs/2602.07203"

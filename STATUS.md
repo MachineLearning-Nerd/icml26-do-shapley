@@ -1,31 +1,47 @@
-# STATUS — Exactly Computing do-Shapley Values (`Peim0KY6ty`)
+# Status — icml26-do-shapley
 
-**Session:** NewPaper. **Last updated:** 2026-07-17. **State:** locally complete; publication queued.
+**Paper:** *Exactly Computing do-Shapley Values*
+**Authors:** R. Teal Witter, Álvaro Parafita, Tomas Garriga, Maximilian
+Muschalik, Fabian Fumagalli, Axel Brando, and Lucas Rosenblatt
+**Sources:** [arXiv:2602.07203](https://arxiv.org/abs/2602.07203) ·
+[OpenReview Peim0KY6ty](https://openreview.net/forum?id=Peim0KY6ty)
+**Repository:** <https://github.com/MachineLearning-Nerd/icml26-do-shapley>
 
-GitHub: `MachineLearning-Nerd/icml26-repro-Peim0KY6ty-do-shapley` (pending push).
-HF Space (queued): `DineshAI/Peim0KY6ty`.
+## Release status
 
-## Source audit
+The scoped clean-room reproduction, documentation, and evidence bundle are
+complete. The final release gate is mechanical: `verify_final.py` checks the
+canonical `main` branch, commit attribution, repository name, committed
+metrics, and the focused test suite from a fresh clone.
 
-- arXiv [2602.07203](https://arxiv.org/abs/2602.07203); OpenReview `Peim0KY6ty`.
-- **No official code released** — clean-room implementation directly from the PDF.
-- Both claims CPU-feasible at full algorithmic scale; no GPU/training.
+## Verified in scope
 
-## Evidence (locally complete)
+- Exact `r`-class aggregation agrees with exhaustive `2^d` Shapley values on
+  60 generated linear-Gaussian SCMs.
+- The maximum C1 absolute error is `1.5987211554602254e-14`; all 60 rows are
+  marked verified in the committed output.
+- The exact implementation reaches `d=25` and the recorded timing sweep has
+  exact-time/`r` correlation `0.9991816646097756`.
+- The boundary sampler is exact at `m ≥ r` for four SCM cases, with maximum
+  recorded error `2.0135342197896845e-14` on those rows.
+- The largest committed boundary-vs-blind gap is `15.530870010069162` orders
+  of magnitude at `d=11, r=81, m=81`.
+- The test suite contains 28 focused tests, including efficiency, symmetry,
+  class-weight, exact-vs-brute, estimator, and negative-control checks.
 
-- **C1 verified:** exact `r`-class algorithm (Algorithm 2 + Eq. 4) == brute-force
-  `2^d`-coalition Shapley across **60 SCMs**, worst error **1.6e-14**;
-  efficiency axiom <1e-13. Runtime **linear in `r`** (corr 0.9995), up to
-  **73×** faster than brute; solves d=25 where brute (2^25) is infeasible.
-  `r` spans `[d, 2^d]` (chain r≈d+1 → all-to-Y r=2^d).
-- **C2 verified:** boundary sampler (Algorithm 3) exact at budget `m ≥ r`
-  (**≤3.7e-15**), beating a value-function-agnostic baseline by up to
-  **15.5 orders of magnitude** at `m = r`; advantage grows monotonically as `m → r`.
-- **28/28 pytest tests pass** (claims, lemmas, axioms, 2 negative controls).
-- Trackio logbook complete, tagged, pinned, command-captured, secret-scanned.
+## Not reproduced
 
-## Next
+- The paper's universal complexity and estimator guarantees are not claimed
+  as experimentally proved; the repository supplies implementation evidence
+  and finite checks only.
+- The nonparametric identifiability theorem and singleton-intervention limit
+  are not independently audited here.
+- External datasets, learned/nonlinear SCMs, applications, and complete paper
+  figures/tables are outside this repository's scope.
 
-- Push to public GitHub `MachineLearning-Nerd/icml26-repro-Peim0KY6ty-do-shapley`.
-- Publish `DineshAI/Peim0KY6ty` after the HF daily Space-creation quota resets
-  (~23h), verify public tags + artifact bucket, then set `under_verdict`.
+## Provenance
+
+No official implementation was available for this clean-room reproduction.
+The code is derived from the paper and the local paper-text artifact listed in
+[`SOURCE_MANIFEST.md`](SOURCE_MANIFEST.md). The exact claim boundaries and
+producer-to-output paths are recorded in [`CLAIM_EVIDENCE.md`](CLAIM_EVIDENCE.md).
