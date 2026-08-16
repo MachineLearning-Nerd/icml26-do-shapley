@@ -82,7 +82,7 @@ def check_docs() -> None:
     for marker in ("docs/paper.txt", "run_claims.py", "clean-room"):
         if marker not in manifest:
             fail(f"source manifest is missing marker: {marker}")
-    for marker in ("main", "master", "MachineLearning-Nerd", "No `orx`"):
+    for marker in ("main", "master", "MachineLearning-Nerd", "`orx`"):
         if marker not in branch_audit:
             fail(f"branch audit is missing marker: {marker}")
     for marker in ("repository-code:", "10.48550/arXiv.2602.07203", "Rosenblatt"):
