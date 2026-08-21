@@ -104,6 +104,11 @@ rows, six larger exact cases through `d=25`, three `r`-range cases, and 24
 estimator rows. The largest exact-only case takes about 19 seconds on the
 recorded machine; exhaustive `2^25` brute force is intentionally not run.
 
+## Branches
+
+The canonical publication surface is the sole published `main` branch. Branch
+roles and the cleanup history are recorded in [`BRANCH_AUDIT.md`](BRANCH_AUDIT.md).
+
 ## Committed evidence
 
 - C1 exact-vs-brute: 60/60 cases verified; worst absolute error
