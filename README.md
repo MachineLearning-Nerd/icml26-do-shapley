@@ -124,7 +124,7 @@ roles and the cleanup history are recorded in [`BRANCH_AUDIT.md`](BRANCH_AUDIT.m
 - Negative controls correctly detect a non-class-constant sham value function
   and a broken class partition.
 
-## Attribution and thanks
+## Thank you
 
 All publication commits are attributed to `MachineLearning-Nerd`.
 
